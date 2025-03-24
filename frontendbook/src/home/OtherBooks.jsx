@@ -6,10 +6,6 @@ const OtherBooks = () => {
 
     const backendUrl = import.meta.env.VITE_BACKEND_URL
 
-    // useEffect(() => {
-    //     fetch(`${backendUrl}/all-books`).then(res => res.json()).then(data => 
-    //         setBooks(data.slice(0, 8)))
-    // }, [books])
 
     useEffect(() => {
       fetch(`${backendUrl}/all-books`)
@@ -30,3 +26,6 @@ const OtherBooks = () => {
 }
 
 export default OtherBooks
+
+
+

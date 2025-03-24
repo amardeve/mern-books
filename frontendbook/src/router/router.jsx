@@ -60,7 +60,7 @@ const router = createBrowserRouter([
         path: "/book/:id",
         element: <SingleBook />,
         loader: ({ params }) =>
-          fetch(`${backendUrl}/${params.id}`)
+          fetch(`${backendUrl}/book/${params.id}`)
             .then((res) => {
               if (!res.ok) {
                 throw new Error("Network response was not ok");

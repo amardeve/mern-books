@@ -42,6 +42,10 @@ const router = createBrowserRouter([
         element: <About />
       },
       {
+        path:"/blog",
+        element: <Blog />
+      },
+      {
         path: "/blog/:postId",
         loader: ({ params }) =>
           fetch(`${backendUrl}/${params.postId}`)
@@ -56,6 +60,7 @@ const router = createBrowserRouter([
         path: "/shop/:id",
         element: <SingleBook />
       },
+
       {
         path: "/book/:id",
         element: <SingleBook />,

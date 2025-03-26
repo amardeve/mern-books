@@ -42,9 +42,9 @@ const Signup = () => {
 
     return (
         <div className="min-h-screen bg-blue-400 py-6 flex flex-col justify-center sm:py-12">
-            <div className="relative py-3 sm:max-w-md sm:mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-r w-full from-rose-300 to-rose-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-xl"></div>
-                <div className="relative px-4 py-10 bg-yellow-400 shadow-lg sm:rounded-xl sm:p-6">
+            <div className="relative py-3 mx-4 sm:max-w-md sm:mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-r w-full from-rose-300 to-rose-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-lg sm:rounded-xl"></div>
+                <div className="relative px-4 py-10 bg-yellow-400 shadow-lg rounded-lg sm:rounded-xl sm:p-6">
                     <div className="max-w-sm mx-auto">
                         <h1 className="text-2xl font-semibold text-white">Sign Up </h1>
                         <form onSubmit={handleSignUp} className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
@@ -55,7 +55,7 @@ const Signup = () => {
                                 <input id="password" name="password" type="password" required className="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 rounded-md focus:outline-none focus:border-rose-600" placeholder="Password" />
                             </div>
                             {error && <p className="text-red-500">{error}</p>}
-                            <p>If you have an account, please <Link to="/login" className="text-blue-700 underline">Login</Link> here.</p>
+                            <p className='text-sm'>If ff you have an account, please <Link to="/login" className="text-blue-700 underline">Login</Link> here.</p>
                             <div className="relative">
                                 <button className="bg-blue-500 text-white rounded-md px-6 py-2">Sign up</button>
                             </div>

@@ -232,7 +232,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5 mt-16 w-[90%] m-auto">
+    <div className="grid grid-cols-1 md:grid-cols-1 gap-16  p-5 mt-16 w-[90%] m-auto">
       {blogPosts.map((post) => (
         <BlogCard key={post.id} post={post} />
       ))}
@@ -243,10 +243,13 @@ const Blog = () => {
 const BlogCard = ({ post }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleReadMore = () => setIsExpanded(!isExpanded);
-
+   const id =post.id;
+   console.log(id)
   return (
-    <div className="bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col md:flex-col">
-      <img className=" w-full h-28 md:h-48 md:w-full object-cover" src={post.image} alt={post.title} />
+    <div className={`bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl items-center transition-shadow duration-300 
+    flex flex-col md:${id % 2 === 0 ? "flex-row-reverse": "flex-row"} gap-x-8`}>
+
+      <img className=" w-full h-full md:h-96 md:w-[80%] object-cover" src={post.image} alt={post.title} />
       <div className="p-5 flex flex-col justify-between flex-grow">
         <div>
           <h2 className="text-xl font-semibold text-gray-800">{post.title}</h2>

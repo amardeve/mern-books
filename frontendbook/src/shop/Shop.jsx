@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from 'react';
 import { Card } from "flowbite-react";
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
   const [books, setBooks] = useState([]);
@@ -42,8 +43,11 @@ const Shop = () => {
               <p className="font-normal overflow-hidden w-full line-clamp-3  text-gray-700 dark:text-gray-400">
                 {book.bookDescription}
               </p>
-              <button className='bg-blue-700 font-semibold text-white py-2 rounded'>Buy New</button>
+              <Link to={`/book/${book._id}`} >
+              <button className='bg-blue-700 font-semibold w-full text-white py-2 rounded'>Buy New</button>
+              </Link>
             </Card>
+            
           )
         }
       </div>

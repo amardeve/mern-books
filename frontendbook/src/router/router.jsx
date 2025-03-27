@@ -19,6 +19,7 @@ import Login from "../components/Login";
 import PrivateRout from "../privateRoute/PrivateRout";
 import Logout from "../components/Logout";
 import ErrorPage from "../components/ErrorPage";
+import Cart from "../components/Cart";
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path:"/blog",
         element: <Blog />
+      },
+      {
+        path:"/cart",
+        element: <Cart />
       },
       {
         path: "/blog/:postId",

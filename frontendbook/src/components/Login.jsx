@@ -55,9 +55,9 @@ const Login = () => {
                             <div className="relative">
                                 <input id="password" name="password" type="password" required className="peer h-10 w-full border-b-2 border-gray-300 rounded-md text-gray-900 focus:outline-none focus:border-rose-600" placeholder="Password" />
                             </div>
-                            <p className="text-red-700 bg-with
+                            <p className="text-red-700 bg-with bg-red-500/15 px-3 rounded-md
                             ">{error ? "Email, or Password is not correct):" : ""}</p>
-                            <p className='text-sm'>If you don't have an account, please <Link to="/sign-up" className="text-blue-700 underline">Sign Up</Link> here.</p>
+                            <p className='text-sm'>If you don't have an account, please <Link to="/sign-up" className="text-blue-700 underline"> Sign Up</Link> here.</p>
                             <div className="relative">
                                 <button className="bg-blue-500 text-white rounded-md px-6 py-2">Log in</button>
                             </div>

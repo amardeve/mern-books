@@ -109,7 +109,7 @@ const BlogCard = ({ post }) => {
    console.log(id)
   return (
     <div className={`bg-white rounded-md shadow-lg overflow-hidden hover:shadow-xl items-center transition-shadow duration-300 
-    flex flex-col md:${id % 2 === 0 ? "flex-row-reverse": "flex-row"} gap-x-8`}>
+    flex flex-col md:${id % 2 === 0 ? "flex-row" : "flex-row-reverse"} gap-x-8`}>
 
       <img className=" w-full h-full md:h-96 md:w-[80%] object-cover" src={post.image} alt={post.title} />
       <div className="p-5 flex flex-col justify-between flex-grow">

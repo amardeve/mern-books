@@ -82,11 +82,11 @@ const SingleBook = () => {
             <div className="mt-6 space-y-2">
               <div className="flex justify-between">
                 <p className="font-semibold text-gray-700">Genre:</p>
-                <p className="text-gray-600">{book.genre}</p>
+                <p className="text-gray-600">{category}</p>
               </div>
               <div className="flex justify-between">
-                <p className="font-semibold text-gray-700">Price:</p>
-                <p className="text-gray-600">{category}</p>
+                <p className="font-semibold text-gray-700">Price: </p>
+                <p className="text-gray-600">{'$10'}</p>
               </div>
               <div className="flex justify-between">
                 <p className="font-semibold text-gray-700">Publication Date:</p>

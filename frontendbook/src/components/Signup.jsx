@@ -54,8 +54,8 @@ const Signup = () => {
                             <div className="relative">
                                 <input id="password" name="password" type="password" required className="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 rounded-md focus:outline-none focus:border-rose-600" placeholder="Password" />
                             </div>
-                            {error && <p className="text-red-500">{error}</p>}
-                            <p className='text-sm'>If ff you have an account, please <Link to="/login" className="text-blue-700 underline">Login</Link> here.</p>
+                            {error && <p className="text-red-500 bg-red-500/15 px-3 py-1.5 rounded-md">{error}</p>}
+                            <p className='text-sm'>If you have an account, please <Link to="/login" className="text-blue-700 underline"> Login</Link> here.</p>
                             <div className="relative">
                                 <button className="bg-blue-500 text-white rounded-md px-6 py-2">Sign up</button>
                             </div>
